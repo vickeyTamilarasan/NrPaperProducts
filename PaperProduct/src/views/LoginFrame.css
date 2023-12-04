@@ -1,0 +1,102 @@
+/* Use a media query to add a breakpoint at 1000px: */
+@media screen and (max-width: 1000px) {
+
+    .logcarsty {
+        border-radius: 10px;
+    }
+    
+    .logcard {
+        width: 250px;
+        border: 1px solid darkgray;
+    }
+
+    .imgLogo{
+        text-align: center;
+        width: 30em;
+    }
+    
+    .btnfac {
+        width: 200px;
+        font-family: 'Quicksand';
+        height: 50px;
+        font-size: 13px;
+        margin-top: 20px;
+        background-color: #38529a;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        border: 1px solid #38529a;
+    }
+    
+    .txtor {
+        color: darkgrey;
+        font-family: 'Quicksand';
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .txtLog {
+        font-family: 'Quicksand';
+        font-size: 12px;
+        font-weight: bold;
+        font-weight: bold;
+    }
+    
+    .inemail {
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Quicksand';
+        height: 50px;
+        width: 200px;
+    }
+    
+    .inpass {
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Quicksand';
+        height: 50px;
+        width: 200px;
+    }
+    
+    .btnlogin {
+        width: 200px;
+        font-family: 'Quicksand';
+        height: 50px;
+        font-size: 13px;
+        margin-top: 20px;
+        background-color: rgb(117, 214, 21);
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        border: 1px solid rgb(117, 214, 21);
+    }
+    
+    .txtfyp{
+        font-family: 'Quicksand'; 
+        font-size: 12px;
+    }
+    
+    .txtcli{
+        color: #ff3676;
+        text-decoration: underline;
+    }
+    
+    .txtdnhaa{
+        font-family:'Quicksand';
+        line-height: 25px; 
+        font-size: 17px;
+        text-align: center;
+        margin-left: -80px;
+    }
+    
+    .txtsuff{
+        color: #ff3676; 
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+}

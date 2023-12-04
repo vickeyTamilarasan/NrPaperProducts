@@ -1,0 +1,1 @@
+export const ApiAddress = "http://localhost:2000/register"

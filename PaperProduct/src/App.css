@@ -1,0 +1,522 @@
+body {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #eee9c7 !important;
+}
+
+.bagimg {
+  margin-top: -45px;
+  width: 12em;
+}
+
+.pacimg {
+  margin-top: 9em;
+  width: 12em;
+  animation: bounce 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 50px, 0);
+  }
+}
+
+.pacimg {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+}
+
+#header {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  color: #5c7bb9;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#fitext {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 12em;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+#setext {
+  margin-top: -30px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+#thtext {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 22px;
+  color: grey;
+  letter-spacing: 1px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.roundiv {
+  height: 18em;
+  margin-top: 7em;
+  border-radius: 50px;
+  background-color: black;
+  padding: 10px;
+  position: relative;
+}
+
+.txttrust {
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.clitxt {
+  font-size: 13px;
+  color: grey;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.bagla {
+  margin-top: 150px;
+  position: absolute;
+  margin-left: -50px;
+}
+
+.marks {
+  text-align: center;
+  margin-top: 12em;
+}
+
+.nrpaper {
+  font-size: 3em;
+  font-weight: lighter;
+  font-family: 'Nunito sans';
+}
+
+.nr {
+  font-family: 'Quicksand';
+  font-weight: bold;
+}
+
+.busimg{
+  width: 17em;
+}
+
+.marke {
+  margin-top: 2em;
+  text-align: start;
+  font-size: 2em;
+  font-family: 'Nunito sans';
+}
+
+.market {
+  font-size: 2em;
+  text-align: start;
+  font-family: 'Nunito sans';
+}
+
+.markpara {
+  text-align: start;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-family: 'Nunito sans';
+}
+
+.contactbtn {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: 'Nunito sans';
+}
+
+.pro {
+  margin-top: 7em;
+}
+
+.producttxt {
+  text-align: center;
+  font-size: 3em;
+  font-weight: normal;
+  font-family: 'Quicksand';
+}
+
+.protxt {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.itemcard {
+  margin: 18px;
+  width: 14em;
+  height: 17em;
+}
+
+.itemimg{
+  text-align: center;
+  width: 8em;
+  margin-top: 1.5em;
+  margin-left: 2.5em;
+}
+
+.btnitem {
+  font-family: 'Quicksand';
+}
+
+.txtitem {
+  font-family: 'Quicksand';
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.titleh {
+  color: #5c7bb9;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.purposecon {
+  margin-top: 30px;
+}
+
+.videocon {
+  width: 50em;
+  height: 28em;
+}
+
+.envi {
+  margin-top: 5em;
+  text-align: end;
+}
+
+.friimg{
+  width: 24em;
+}
+
+.txtecoti {
+  margin-top: 20px;
+  text-align: start;
+  font-size: 2em;
+  font-family: 'Quicksand';
+}
+
+.txtecodesc {
+  font-size: 15px;
+  text-align: start;
+  font-family: 'Quicksand';
+}
+
+.broucherbtn {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: 'Nunito sans';
+}
+
+.cusriv {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.txtwcus {
+  font-weight: normal;
+  font-family: 'Quicksand';
+}
+
+.txtcussay {
+  font-weight: normal;
+  font-family: 'Quicksand';
+}
+
+.txtnr {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.colo {
+  display: inline-block;
+  width: 15em;
+}
+
+.txtreview{
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.txtdev {
+  color: white;
+  font-size: 2.6em;
+  font-family: 'Quicksand';
+}
+
+.txtdevNr {
+  color: grey;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.addimg {
+  margin-top: 15px;
+  width: 11em;
+}
+
+.txtheding{
+  margin-top: 20px;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Nunito sans';
+}
+
+.imgBanner{
+  width: 30em;
+  height: 30em;
+}
+
+.txtgsm{
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.inkg{
+  width: 12em;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.addcart{
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #5c7bb9;
+  color: black;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.btnminus{
+  width: 1.2em;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #5c7bb9;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.btnadd{
+  width: 1.2em;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #5c7bb9;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.incoun{
+  width: 2em;
+  text-align: center;
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.cartItem{
+  margin-top: -50px;
+  margin-right: 40px;
+}
+
+.cartItemApp{
+  margin-right: 40px;
+  text-align: center;
+}
+
+.txtcheckh{
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.imgcarti{
+  width: 10em;
+  margin: 20px;
+}
+
+.cardCheck{
+  margin-top: 5em;
+  margin-bottom: 5em;
+  width: 35em;
+}
+
+.checkimg{
+  margin-top: 5em;
+  width: 38em;
+}
+
+.txtcartItde{
+  margin: 1.5em;
+  text-align: start;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.txtcartItdepri{
+  margin-top: 3em;
+  text-align: end;
+  color: red;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.btnPlaorder{
+  border-radius: 20px;
+  margin: 3em;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.btnLogin{
+  width: 6em;
+  padding: 7px;
+  margin-top: 1.8em;
+  border-radius: 50px;
+  margin-right: 80px;
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  font-family: 'Quicksand';
+}
+
+.btnLogout{
+  width: 6em;
+  padding: 7px;
+  margin-top: -1em;
+  border-radius: 50px;
+  margin-right: 80px;
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  font-family: 'Quicksand';
+}
+
+.divpack{
+  margin-top: 10em;
+}
+
+.txtUname{
+  margin-top: 1em;
+  margin-right: 5em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+  text-align: end;
+}
+
+.cartIconApp{
+  margin-top: -3.5em;
+  margin-right: 2em;
+}
+
+.txtcarte{
+  margin-top: 1em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.btnreshop{
+  border-radius: 30px;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.emptyimg{
+  width: 15em;
+  margin-top: 2em;
+}
+
+.imgorder{
+  text-align: center;
+  margin-top: 10em;
+}
+
+.btnreApp{
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-family: Quicksand;
+}
+
+.divAdd{
+  margin-top: 8em;
+  margin-bottom: 5em;
+}
+
+.txtAddress{
+  font-family: 'Quicksand';
+  font-size: 1.5em;
+}
+
+.txthAddress{
+  padding: 10px;
+  margin-left: 1em;
+  font-weight: bold;
+  font-family: 'Quicksand';
+}
+
+.btnUpdate{
+  margin-top: 1em;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-family: 'Quicksand';
+}
