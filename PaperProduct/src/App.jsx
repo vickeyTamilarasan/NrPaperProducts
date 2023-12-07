@@ -31,7 +31,7 @@ function App() {
   const [dateofbirth, setdateofbirth] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:2000/items').then((item) => {
+    axios.get('https://nr-paper-products.onrender.com/items').then((item) => {
       setitemdata(item.data);
       console.log(item);
     })

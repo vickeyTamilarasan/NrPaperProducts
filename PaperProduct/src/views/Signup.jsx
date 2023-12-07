@@ -17,7 +17,7 @@ function Signup() {
 
 
     function handelRegister() {
-        axios.post('http://localhost:2000/register', {
+        axios.post('https://nr-paper-products.onrender.com/register', {
             name: name,
             email: email,
             password: password,

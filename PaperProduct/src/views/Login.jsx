@@ -18,7 +18,7 @@ function Login() {
     function handelLogins(event) {
         event.preventDefault();
         try {
-            axios.post('http://localhost:2000/login', {
+            axios.post('https://nr-paper-products.onrender.com/login', {
                 name: name,
                 password: password
             }).then((user) => {

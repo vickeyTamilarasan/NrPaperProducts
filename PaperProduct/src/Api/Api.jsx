@@ -1,1 +1,1 @@
-export const Api = "http://localhost:2000/items"
+export const Api = "https://nr-paper-products.onrender.com/items"

@@ -26,7 +26,7 @@ function Checkout() {
 
 
     useEffect(() => {
-        axios.get('http://localhost:2000/cart').then((item) => {
+        axios.get('https://nr-paper-products.onrender.com/cart').then((item) => {
             setcartdata(item.data)
             console.log(item.data);
         })
@@ -51,7 +51,7 @@ function Checkout() {
     }
 
     function handelOrderPlaceApi() {
-        axios.delete('http://localhost:2000/cart').then((s) => {
+        axios.delete('https://nr-paper-products.onrender.com/cart').then((s) => {
             console.log(s.data);
             navi('/orderPlaced');
         });

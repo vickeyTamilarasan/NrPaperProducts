@@ -55,7 +55,7 @@ function Items() {
     const handeladdcount = () => { setCounter(counter + 1) }
 
     function handelAddItem() {
-        axios.post('http://localhost:2000/cart', {
+        axios.post('https://nr-paper-products.onrender.com/cart', {
             name: itemName,
             gsm: itemGsm,
             image: itemImage,
