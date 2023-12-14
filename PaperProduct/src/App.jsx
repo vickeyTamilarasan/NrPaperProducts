@@ -305,10 +305,10 @@ function App() {
       <div className=' row divAdd'>
         <div className='col-4'></div>
         <div className='col-4'>
-          <p id='header'>
+          <p className='txtheader'>
             NR PAPER PRODUCTS
           </p>
-          <h3 className='text-center txtAddress'>
+          <h3 className='text-center txtAppAddress'>
             2/1,NR Thottam, Rudish colony,opp.
             Noochikatu valasu, Kollampalayam,
             Erode -2
