@@ -502,19 +502,32 @@
     margin-bottom: 5em;
   }
 
+  .txtheader {
+    text-align: center;
+    font-size: 1em;
+    color: #5c7bb9;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .txtAppAddress {
+    font-family: 'Quicksand';
+    font-size: 1em;
+  }
+
   .txtAddress {
     font-family: 'Quicksand';
     font-size: 1.5em;
   }
 
-  .txthAddress{
+  .txthAddress {
     padding: 10px;
     margin-left: 1em;
     font-weight: bold;
     font-family: 'Quicksand';
   }
-  
-  .btnUpdate{
+
+  .btnUpdate {
     margin-top: 1em;
     padding: 8px;
     border-radius: 30px;
