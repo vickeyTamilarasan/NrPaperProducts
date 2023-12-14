@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import '../App.css'
 import '../AppFrame.css'
+import '../AppMobileFrame.css'
 import axios from "axios"
 import CartItem from "./CartItem"
 import CheckoutImg from '../assets/checkoutitem.gif'

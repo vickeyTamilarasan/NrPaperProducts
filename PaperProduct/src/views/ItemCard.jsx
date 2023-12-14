@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import '../App.css'
 import '../AppFrame.css'
+import '../AppMobileFrame.css'
 
 import { useNavigate } from 'react-router-dom';
 

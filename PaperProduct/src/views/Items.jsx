@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import '../App.css'
 import '../AppFrame.css'
+import '../AppMobileFrame.css'
 
 // OwlCarousel
 // import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -82,7 +83,7 @@ function Items() {
                 <div className="col-6 p-5">
                     <img className=" card img-fluid imgBanner" src={`data:image/jpg;base64,${itemImage}`} alt="Item images" />
                 </div>
-                <div className="col-6 p-5">
+                <div className="col-6 p-1 mt-5">
                     <h3 className="txtgsm">
                         Name : {itemName}
                     </h3>
@@ -105,7 +106,7 @@ function Items() {
                                     <div className="col-5">
                                         <div className="input-group mb-2">
                                             <div className="input-group-prepend">
-                                                <div className="input-group-text">Kg</div>
+                                                <div className="input-group-text txtkg">Kg</div>
                                             </div>
                                             <input type="text" className="form-control inkg" id="inlineFormInputGroup" placeholder="Type Quantity" />
                                         </div>

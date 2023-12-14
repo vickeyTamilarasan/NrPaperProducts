@@ -9,6 +9,7 @@ import addition from './assets/additional.gif'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import './AppFrame.css'
+import './AppMobileFrame.css'
 import axios from 'axios'
 import ItemCard from './views/ItemCard'
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -115,8 +116,8 @@ function App() {
         </div>
       </div>
       <div className='row'>
-        <div className='col-3'></div>
-        <div className='col-6 roundiv'>
+        <div className='col-2'></div>
+        <div className='col-7 roundiv'>
           <div className='row'>
             <div className='col-7'>
               <h1 className='ms-5 pt-5 text-light txttrust'>
@@ -282,8 +283,8 @@ function App() {
         </div>
       </div>
       <div className='row'>
-        <div className='col-3'></div>
-        <div className='col-6 roundiv'>
+        <div className='col-2'></div>
+        <div className='col-7 roundiv'>
           <div className='row p-3'>
             <div className='col-8'>
               <h1 className='p-3 txtdev'>
