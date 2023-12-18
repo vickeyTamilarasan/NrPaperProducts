@@ -76,12 +76,53 @@ function Checkout() {
         })
     }
 
-    return (
-        <div>
-            <h1 className="txtcheckh">
-                Checkout
-            </h1>
-            {cartdata.length === 0 ?
+    function handelShowUserAddress() {
+        return (
+            localStorage.getItem("UserName") !== "" ?
+                <div className="row">
+                    <div className="col-4 text-end">
+                        <p className="txthAddress">
+                            User Address :
+                        </p>
+                    </div>
+                    <div className="col-5 text-start mt-2">
+                        {localStorage.getItem('UserAddress')}
+                    </div>
+                    <div className="col-3">
+                        <button type="button" className="btnUpdate" onClick={handleShowAddress}>Update</button>
+
+                        <Modal show={showAddress} onHide={handleCloseAddress}>
+                            <Modal.Header closeButton>
+                                <Modal.Title className="text-center">Update Address</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <Form >
+                                    <Form.Group
+                                        className="mb-3"
+                                        controlId="exampleForm.ControlTextarea1">
+                                        <Form.Label>Address</Form.Label>
+                                        <Form.Control as="textarea" rows={3} defaultValue={localStorage.getItem('UserAddress')} onChange={(e) => { localStorage.setItem('UserAddress', e.target.value) }} />
+                                    </Form.Group>
+                                </Form>
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <Button variant="secondary" onClick={handleCloseAddress}>
+                                    Close
+                                </Button>
+                                <Button variant="primary" onClick={handleSaveAddress}>
+                                    Update
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
+                    </div>
+                </div> :
+                <div></div>
+        );
+    }
+
+    function handelCartPage() {
+        return (
+            cartdata.length === 0 ?
                 <div className="row">
                     <div className="col-12 text-center">
                         <img className="emptyimg" src={EmpytycartImg} alt="Checkout" />
@@ -105,47 +146,7 @@ function Checkout() {
                         <div className="card cardCheck">
                             {cartItemsList}
 
-                            {localStorage.getItem("UserName") !== "" ?
-                                <div className="row">
-                                    <div className="col-4 text-end">
-                                        <p className="txthAddress">
-                                            User Address :
-                                        </p>
-                                    </div>
-                                    <div className="col-5 text-start mt-2">
-                                        {localStorage.getItem('UserAddress')}
-                                    </div>
-                                    <div className="col-3">
-                                        <button type="button" className="btnUpdate" onClick={handleShowAddress}>Update</button>
-
-                                        <Modal show={showAddress} onHide={handleCloseAddress}>
-                                            <Modal.Header closeButton>
-                                                <Modal.Title className="text-center">Update Address</Modal.Title>
-                                            </Modal.Header>
-                                            <Modal.Body>
-                                                <Form >
-                                                    <Form.Group
-                                                        className="mb-3"
-                                                        controlId="exampleForm.ControlTextarea1">
-                                                        <Form.Label>Address</Form.Label>
-                                                        <Form.Control as="textarea" rows={3} defaultValue={localStorage.getItem('UserAddress')} onChange={(e) => { localStorage.setItem('UserAddress', e.target.value) }} />
-                                                    </Form.Group>
-                                                </Form>
-                                            </Modal.Body>
-                                            <Modal.Footer>
-                                                <Button variant="secondary" onClick={handleCloseAddress}>
-                                                    Close
-                                                </Button>
-                                                <Button variant="primary" onClick={handleSaveAddress}>
-                                                    Update
-                                                </Button>
-                                            </Modal.Footer>
-                                        </Modal>
-                                    </div>
-                                </div> :
-                                <div></div>
-                            }
-
+                            {handelShowUserAddress()}
 
                             <button type="button" className="btnPlaorder" onClick={handleShow}>Place Order</button>
 
@@ -165,7 +166,18 @@ function Checkout() {
                             </Modal>
                         </div>
                     </div>
-                </div>}
+                </div>
+        );
+    }
+
+    return (
+        <div>
+            <h1 className="txtcheckh">
+                Checkout
+            </h1>
+
+            {handelCartPage()}
+
         </div>
     )
 }

@@ -71,6 +71,32 @@ function Items() {
         navi('/checkout')
     }
 
+    function handelItemQtySelector() {
+        return (
+
+            itemQuantity === "per 1 kg" ?
+                <div>
+                    <div className="col-5">
+                        <div className="input-group mb-2">
+                            <div className="input-group-prepend">
+                                <div className="input-group-text txtkg">Kg</div>
+                            </div>
+                            <input type="text" className="form-control inkg" id="inlineFormInputGroup" placeholder="Type Quantity" />
+                        </div>
+                    </div>
+                    <button className="addcart" onClick={handelAddItem}>Add to cart</button>
+                </div> : <div>
+                    <div>
+                        <button className="btnminus" onClick={handelminuscount}>-</button>
+                        <input className="incoun" type="text" value={counter} disabled='true' />
+                        <button className="btnadd" onClick={handeladdcount}>+</button>
+                    </div>
+                    <button className="addcart" onClick={handelAddItem}>Add to cart</button>
+                </div>
+
+        );
+    }
+
     return (
         <div>
             <h1 className="txtheding">
@@ -100,28 +126,8 @@ function Items() {
                         Material : Recycle kraft paper
                     </h3>
                     <div>
-                        {
-                            itemQuantity === "per 1 kg" ?
-                                <div>
-                                    <div className="col-5">
-                                        <div className="input-group mb-2">
-                                            <div className="input-group-prepend">
-                                                <div className="input-group-text txtkg">Kg</div>
-                                            </div>
-                                            <input type="text" className="form-control inkg" id="inlineFormInputGroup" placeholder="Type Quantity" />
-                                        </div>
-                                    </div>
-                                    <button className="addcart" onClick={handelAddItem}>Add to cart</button>
-                                </div> : <div>
-                                    <div>
-                                        <button className="btnminus" onClick={handelminuscount}>-</button>
-                                        <input className="incoun" type="text" value={counter} disabled='true' />
-                                        <button className="btnadd" onClick={handeladdcount}>+</button>
-                                    </div>
-                                    <button className="addcart" onClick={handelAddItem}>Add to cart</button>
-                                </div>
-                        }
 
+                        {handelItemQtySelector()}
 
                     </div>
                 </div>

@@ -54,12 +54,25 @@ function App() {
     navi('/checkout');
   }
 
+  function handelLoginandLogout() {
+    return (
+      name === "" ?
+        <div className="text-end cartItemApp">
+          <button type='button' onClick={handelLoginApp} className='btnLogin'>Login</button>
+        </div> :
+        <div className="text-end cartItemApp">
+          <p className='txtUname'>{name}</p>
+          <button type='button' onClick={handelLogoutApp} className='btnLogout'>Logout</button>
+        </div>
+    );
+  }
+
   function handelLoginApp() {
     navi('/login');
   }
 
   function handelLogoutApp() {
-    localStorage.setItem('UserId' ,"");
+    localStorage.setItem('UserId', "");
     localStorage.setItem('UserName', "");
     localStorage.setItem('UserEmail', "");
     localStorage.setItem('UserPassword', "");
@@ -80,15 +93,7 @@ function App() {
             </p>
           </div>
           <div className='col-3'>
-            {name === "" ?
-              <div className="text-end cartItemApp">
-                <button type='button' onClick={handelLoginApp} className='btnLogin'>Login</button>
-              </div> :
-              <div className="text-end cartItemApp">
-                <p className='txtUname'>{name}</p>
-                <button type='button' onClick={handelLogoutApp} className='btnLogout'>Logout</button>
-              </div>
-            }
+            {handelLoginandLogout()}
           </div>
         </div>
 
